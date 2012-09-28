@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ast::ASTNode" Collapsed="true">
+    <Position X="42" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAoAAAAIAAAABAAAAAAAAAAAAAAIAAAAAgAAABEAAA=</HashCode>
+      <FileName>ast\astnode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lexer" Collapsed="true">
+    <Position X="11.5" Y="6.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAqAAAAAAAgABAAAAAAAAAEFAABAAKEAQAAAQQABAAA=</HashCode>
+      <FileName>lexer\lexer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lookup::Env">
+    <Position X="14" Y="6.5" Width="2.5" />
+    <Members>
+      <Field Name="m_aliveVarInfo" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BILIKQIKCAAAdUABAQBQAAA0oAQCIAAEAIBgBBLcAUI=</HashCode>
+      <FileName>lookup\env.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_aliveVarInfo" />
+      <Field Name="m_conflictGraph" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="lookup::Symbol" Collapsed="true">
+    <Position X="86.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAgAAAAAAAAAAAAABAAAAQAAAAAAAAAEAAAECAA=</HashCode>
+      <FileName>lookup\symbol.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="optimization::GraphHandler">
+    <Position X="6.5" Y="9.5" Width="1.5" />
+    <InheritanceLine Type="tuple::TupleHandler" FixedToPoint="true">
+      <Path>
+        <Point X="3.25" Y="4.059" />
+        <Point X="3.25" Y="9.125" />
+        <Point X="7.438" Y="9.125" />
+        <Point X="7.438" Y="9.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAQAgCBAAAAABAAgAAAAAAEAAIIIAAAAAAUAIgAAA=</HashCode>
+      <FileName>optimization\graphhandler.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Parser">
+    <Position X="10.25" Y="8.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIggAAAAAAAIAgAAAAEAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>parser\parser.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_lexer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Token" Collapsed="true">
+    <Position X="94.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAhAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>lexer\token.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tuple::TupleManager" Collapsed="true">
+    <Position X="94.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAICAAREAAAAAAAAQAAAAAAAAAAAAQAABAAAAA=</HashCode>
+      <FileName>tuple\tuplemanager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tuple::TupleHandler" Collapsed="true">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>tuple\tuplemanager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tuple::Tuple" Collapsed="true">
+    <Position X="96.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAABCAAAAAAAAAAAAAAJAAAAABAAQAgAACAAAAAAAA=</HashCode>
+      <FileName>tuple\tuple.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="x86::BaseHandler">
+    <Position X="19" Y="5.75" Width="2" />
+    <NestedTypes>
+      <Typedef Name="x86::BaseHandler::MovFunc" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>x86\basehandler.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIFAKAQIsIQAUQFAYIAEjgQAwIAgAOFkBAAIWQBggCU=</HashCode>
+      <FileName>x86\basehandler.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="x86::RegisterManager">
+    <Position X="21.25" Y="5.75" Width="2" />
+    <NestedTypes>
+      <Enum Name="x86::RegisterManager::Register" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>x86\registermanager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Typedef Name="x86::RegisterManager::ConflictPair" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>x86\registermanager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAAAkAQUAgABQAAAABEgAQABEBIEAAAAEAAEAAEE=</HashCode>
+      <FileName>x86\registermanager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="optimization::ConflictGraph">
+    <Position X="4.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAEACQAAAAAIAIAAAAAABAAAAAAACAAAEQAAAAA=</HashCode>
+      <FileName>optimization\conflictgraph.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::AbstractCode" Collapsed="true">
+    <Position X="20.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgAAAAAAAAAAAAAAAAAAAAAAABAAQAAAACAAAAAAAA=</HashCode>
+      <FileName>ast\abstractcode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::AbstractConst" Collapsed="true">
+    <Position X="61" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAQAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\abstractconst.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::AssignmentStatement" Collapsed="true">
+    <Position X="18.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ast\assignmentstatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::CaseStatement" Collapsed="true">
+    <Position X="27.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAJAAAAAIAAAgAAAACAAIAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ast\casestatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::CaseStatementList" Collapsed="true">
+    <Position X="36.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAJAAAAAAgAAgAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\casestatementlist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::CompileUnit" Collapsed="true">
+    <Position X="65.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAgAAAAAAAAAAAAAAQAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\compileunit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::CompoundStatement" Collapsed="true">
+    <Position X="76.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\compoundstatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::Const" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAggAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ast\const.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::ConstChar" Collapsed="true">
+    <Position X="58.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAAAAAACAAAAABAAQAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\constchar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::ConstDeclaration" Collapsed="true">
+    <Position X="56.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIAAAAAAAAAABAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\constdeclaration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::ConstDeclarationList" Collapsed="true">
+    <Position X="52" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\constdeclarationlist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::DeclarationHead" Collapsed="true">
+    <Position X="40.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgoAABAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\declarationhead.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::DefaultStatement" Collapsed="true">
+    <Position X="70" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\defaultstatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::Expression" Collapsed="true">
+    <Position X="29.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAABAAAAAAAAAAAAQQAAQAAQAAhAAAAAABA=</HashCode>
+      <FileName>ast\expression.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::Factor" Collapsed="true">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAABAAAwAAAAAAAAAAAAABQAAQAAAAAgAgAAAAAA=</HashCode>
+      <FileName>ast\factor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::FunctionCallStatement" Collapsed="true">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIAAAAwAAAAAAAAAAAQAAQAAAAAgAgAAAAAA=</HashCode>
+      <FileName>ast\functioncallstatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::FunctionDeclaration" Collapsed="true">
+    <Position X="67.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAIAAAgSIAAAAAAAAAAAAAAAAAAAgAAABAAAA=</HashCode>
+      <FileName>ast\functiondeclaration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::IfExpression" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgAAAAAAAAAAAAAAAAIQAAgAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ast\ifexpression.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::IfStatement" Collapsed="true">
+    <Position X="20.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAIAAAAAQAAAAAAAAAAAACAAAAAAAAAAgAAAACAAA=</HashCode>
+      <FileName>ast\ifstatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::Integer" Collapsed="true">
+    <Position X="63.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgAAAAQAAAACAAAAABAAQAAAQAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\integer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::Item" Collapsed="true">
+    <Position X="31.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAABAAAAAAAAAAAEQQAAQAAAAAhAAAAAABA=</HashCode>
+      <FileName>ast\item.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::Main" Collapsed="true">
+    <Position X="38.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAgBBABAAAA=</HashCode>
+      <FileName>ast\main.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::ParamList" Collapsed="true">
+    <Position X="47.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgIAAAAAAAAAAAAAABAAAAAAAAAQAAAAgAAAAAAAA=</HashCode>
+      <FileName>ast\paramlist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::ReadStatement" Collapsed="true">
+    <Position X="22.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\readstatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::Real" Collapsed="true">
+    <Position X="61" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIAAAIAAAAAAACAAABABACQAAQAAAAAAAAgAgAAAAAA=</HashCode>
+      <FileName>ast\real.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::RealSuffix" Collapsed="true">
+    <Position X="45.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAABAAAAAACAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\realsuffix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::ReturnStatement" Collapsed="true">
+    <Position X="25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ast\returnstatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::Statement" Collapsed="true">
+    <Position X="79" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\statement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::StatementList" Collapsed="true">
+    <Position X="43" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\statementlist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::SwitchStatement" Collapsed="true">
+    <Position X="49.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAIAQAAAAAAAAAAAACBAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ast\switchstatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::TypeSpecifier" Collapsed="true">
+    <Position X="72.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\typespecifier.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::ValueParamList" Collapsed="true">
+    <Position X="16" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAkAAAgAAAI=</HashCode>
+      <FileName>ast\valueparamlist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::VariableDeclaration" Collapsed="true">
+    <Position X="54.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgIAAAAAAAAAAAAQAAAAAAABAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ast\variabledeclaration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::VariableDeclarationList" Collapsed="true">
+    <Position X="74.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast\variabledeclarationlist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::WhileStatement" Collapsed="true">
+    <Position X="34" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAgAAAACAAA=</HashCode>
+      <FileName>ast\whilestatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ast::WriteStatement" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgAAgAIIAAAAAAAAAAAAAAAAAAAAAAAAgAAAABAAA=</HashCode>
+      <FileName>ast\writestatement.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="optimization::BaseBlock">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQKAAgAAABEgBZESAADAABYQhAAAGAAAoIJxAAAAAA=</HashCode>
+      <FileName>optimization\baseblock.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="optimization::DAGnode">
+    <Position X="2.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAKgACIAgIIABAAgIAACARAIAAgAAAAAAAAAgI=</HashCode>
+      <FileName>optimization\baseblock.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lookup::String" Collapsed="true">
+    <Position X="87.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAQAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>lookup\symbol.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lookup::Label" Collapsed="true">
+    <Position X="80.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>lookup\symbol.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lookup::Function" Collapsed="true">
+    <Position X="92" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAABABAIAAQAAAAAQAAAAAAAIAAA=</HashCode>
+      <FileName>lookup\symbol.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lookup::Const" Collapsed="true">
+    <Position X="85.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgBAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>lookup\symbol.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lookup::ConstChar" Collapsed="true">
+    <Position X="83" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAUAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>lookup\symbol.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lookup::ConstFloat" Collapsed="true">
+    <Position X="85.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAQAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>lookup\symbol.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lookup::ConstInt" Collapsed="true">
+    <Position X="89.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAQAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>lookup\symbol.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

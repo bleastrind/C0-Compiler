@@ -1,0 +1,22 @@
+float f(float a)
+{
+	float b;
+	printf("a=",a);
+	if ( a <= 1.001)
+	{
+		printf("end");
+		return (1);
+	}
+	return (a*f(a-1));
+}
+
+
+
+void main(){
+
+	const float a=4;
+	printf(a);
+	printf(f(a));
+
+	
+}

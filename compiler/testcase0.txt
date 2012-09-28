@@ -1,0 +1,22 @@
+
+void test(int a,int b)
+{
+
+	int t;
+	
+	printf(a);
+	printf(b);
+	t = a + b;
+	a = b;
+	b = a + b;
+
+	printf(a);
+	printf(b);
+	printf(t);
+}
+void main()
+{
+	int a;
+	
+	test(1,2);
+}

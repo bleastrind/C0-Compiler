@@ -1,0 +1,23 @@
+const int cg = 3; 
+int g;
+
+
+int test(int p1,int p2)
+{
+	const int cl = 2;
+	int i,l;
+	l = 0;
+	i = -10;
+	while ( i )
+	{
+		l = l + ((p1+p2/3) + (p1 + p2/3)) - (g * cg)/cl; 
+		i = i + 1;
+	}
+	return (l/2);
+}
+
+void main()
+{
+    g= 2;
+	printf("%d",test(3,test(3+6,3)));
+}

@@ -1,0 +1,69 @@
+const int repeat = 1;
+const float c = +2,d = -4.03,f=3.000 ;
+const char e = 's',f = '0',ad='4',ds = '-';
+int ia,ib;
+float fa;
+char format;
+
+int func()
+{
+	const int con = -5;
+	const float fff = 0.0, fa = -0.4;
+	const char a = 'z';
+	int repeat;
+	char aac;
+	float repeat;
+	
+	aac = a;
+	repeat = -a + '4';
+	fff = -4*0.4 +con;
+	return (1);
+}
+
+void func2(int x)
+{
+	switch(x)
+	{
+		case 3:
+			if (3)
+				;
+		case '7':
+			;
+		default:
+			while(1)
+				;
+	}
+}
+
+char func3(float x,float y)
+{
+	int a,b,;
+	if ( x > y)
+		printf("hello");
+	else if (x < y)
+	{
+		scanf(a);
+	}else if( x >= y)
+		scanf(a,b);
+	printf("dsa",a);
+	
+	while( x<= y)
+		printf(x*y);
+	while(x == y)
+		;
+	while(x!= y)
+		scanf(a);
+}
+
+void func4()
+{
+	float a,b;
+	return (func3(a,b,b));
+}
+
+void main()
+{
+	int badcall,a;
+	badcall = func4();
+	a = -func()-func();
+}

@@ -1,0 +1,24 @@
+int g;
+
+int test(int x,int y)
+{
+	int a,b;
+	int i,res;
+	
+	a = 1;
+	b = 2;
+	scanf(a,b);
+	i = 0;
+	while ( i < 5 )
+	{
+		res =res + (a+b) + (a+b);
+		i = i + 1;
+	}
+	
+	printf("(a+b)*10=",res);
+}
+
+void main()
+{
+	test(2,3);
+}

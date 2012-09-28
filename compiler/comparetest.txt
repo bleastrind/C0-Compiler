@@ -1,0 +1,39 @@
+
+void main()
+{
+	const int a=1,b=0;
+	printf (a);
+	printf (b);
+	if ( a > b )
+		printf ("p > pass");
+	
+	if ( b < a)
+		printf ("p < pass");
+	
+	if ( a == a)
+		printf ("p == pass");
+	
+	if ( a != b )
+		printf ("p != pass");
+	if ( a >= b)
+		printf ("p >= pass");
+	if ( b <= a)
+		printf ("p <= pass");
+		
+	if ( b > a )
+		printf ("n > notpass");
+	
+	if ( a < b)
+		printf ("n < notpass");
+	
+	if ( a == b)
+		printf ("n == notpass");
+	
+	if ( a != a )
+		printf ("n != notpass");
+	if ( b >= a)
+		printf ("n >= notpass");
+	if ( a <= b)
+		printf ("n <= notpass");
+		
+} 

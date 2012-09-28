@@ -1,0 +1,42 @@
+float f(float a)
+{
+	float b;
+	printf("a=",a);
+	if ( a <= 1.0001)
+	{
+		printf("end");
+		return (1);
+	}
+	b = a-1;
+	printf("b=",b);
+	b = f(b);
+	printf("f(b)=",b);
+	return (a*b);
+}
+int TestCase08()
+{
+	int a, b, c, d;
+	int x, y, z, w;
+	
+	x = 3;
+	y = -2;
+	z = 7;
+	w = -4;
+
+	a = 1.23;
+	b = -2.4;
+	c = 4.92;
+	d = -3.36;
+	a = (((a + 1) + b * z -1.0) * (c - d * y)) / (a + x + a * 2.0 - c / d) * (1.0 + c - w) / 2;
+	b = a * (4.0 / y) - b / (2.0 + x) + 3.0 * 8.0 - w + z * 3;
+	c = (b + x) + (a * z) * (c + w) - d + 10000.0 / y;
+	d = c * 3 - 2 + 1.0;
+	return(d+14608.2);
+}
+
+void main()
+{
+	const float a = 4;
+	printf(TestCase08());
+
+}

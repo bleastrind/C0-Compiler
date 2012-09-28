@@ -1,0 +1,10 @@
+int t(int a,char b,float c,int d)
+{
+	return (a+b+c+d);
+}
+void main()
+{
+	printf(t(1,1,1,1));
+
+
+}
